@@ -21,15 +21,15 @@ Tested with:
 #### On all hosts you want to monitor:
 * Install and configure package zabbix-agent2 (if not installed):  
      ```sh
-     apt-get install zabbix-agent2
+     sudo apt-get install zabbix-agent2
      ```
 * add file "yum.conf" to /etc/zabbix/zabbix_agent2.d/
      ```sh
-     curl -L https://raw.githubusercontent.com/thetorminal/zabbix-templates/refs/heads/main/Template%20yum%20updates/yum.conf -o /etc/zabbix/zabbix_agent2.d/yum.conf
+     sudo curl -L https://raw.githubusercontent.com/thetorminal/zabbix-yum-updates/refs/heads/main/yum.conf -o /etc/zabbix/zabbix_agent2.d/yum.conf
      ```  
 * restart zabbix-agent2
      ```sh
-     systemctl restart zabbix-agent2
+     sudo systemctl restart zabbix-agent2
      ```
      
 ## Version History
